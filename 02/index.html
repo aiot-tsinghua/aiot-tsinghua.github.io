@@ -1,120 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>第2章 移动应用开发基础 - My Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">《大模型重塑移动应用开发》前言</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../01/" class="nav-link">第1章：大模型基本介绍</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">第2章 移动应用开发基础</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../03/" class="nav-link">第3章 移动应用开发基础</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../04/" class="nav-link">第4章 大模型应用开发技巧</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../05/" class="nav-link">第5章 开发案例：纸牌配对游戏</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../06/" class="nav-link">第6章 开发案例：井字棋</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../07/" class="nav-link">第7章 未来前景和总结</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../01/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../03/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>第2章 移动应用开发基础 - 大模型重塑移动应用开发</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#2" class="nav-link">第2章 移动应用开发基础</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#21" class="nav-link">2.1移动应用开发的历史演变</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#22" class="nav-link">2.2 常用的开发工具</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#23" class="nav-link">2.3 跨平台开发框架</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7b2c2\u7ae0 \u79fb\u52a8\u5e94\u7528\u5f00\u53d1\u57fa\u7840";
+        var mkdocs_page_input_path = "02.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
 
-<h1 id="2">第2章 移动应用开发基础</h1>
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 大模型重塑移动应用开发
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">《大模型重塑移动应用开发》前言</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01/">第1章：大模型基本介绍</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">第2章 移动应用开发基础</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#21">2.1移动应用开发的历史演变</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#22">2.2 常用的开发工具</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#221-android-studio">2.2.1 Android Studio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#222-xcode">2.2.2 Xcode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#223-visual-studio-code">2.2.3 Visual Studio Code</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#23">2.3 跨平台开发框架</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#231-flutter">2.3.1 Flutter</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#232-react-native">2.3.2 React Native</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#233-ionic">2.3.3 Ionic</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#234-xamarin">2.3.4 Xamarin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#235-unity">2.3.5 Unity</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03/">第3章 移动应用开发基础</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04/">第4章 大模型应用开发技巧</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../05/">第5章 开发案例：纸牌配对游戏</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../06/">第6章 开发案例：井字棋</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../07/">第7章 未来前景和总结</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">大模型重塑移动应用开发</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>第2章 移动应用开发基础</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2">第2章 移动应用开发基础</h1>
 <p>本章将介绍移动应用开发的基础知识，帮助读者对移动应用开发有更直观的认识，包括移动应用开发的历史演变、常用的开发工具和使用Flutter进行跨平台开发的优势及基础介绍。</p>
 <h2 id="21">2.1移动应用开发的历史演变</h2>
 <p>移动应用开发的历史可以追溯到移动通信设备的早期。包括如下几个重要演变阶段：</p>
@@ -154,81 +163,51 @@
 <p>Xamarin是一个强大的跨平台移动应用开发框架，允许开发者使用C#语言和.NET框架来构建适用于iOS、Android和Windows Phone的原生应用。Xamarin的主要特点包括（1）原生性能，Xamarin使用本地UI组件，确保应用的性能和用户体验接近原生应用；（2）跨平台兼容性，开发者可以共享代码库中的大部分代码，实现一次编写，到处运行，从而显著提高开发效率；（3）丰富的API和工具，Xamarin提供了强大的API和工具集，包括Xamarin.Forms和Xamarin.iOS/Xamarin.Android，帮助开发者快速构建高质量的跨平台应用；（4）灵活的UI开发，Xamarin.Forms允许开发者使用XAML创建跨平台的用户界面，这些UI会在不同平台上呈现为本地控件；（5）全面的硬件支持，Xamarin能够访问设备的所有原生功能，如相机、GPS等，提供更好的用户体验；（6）高性能编译，Xamarin.iOS将C#代码编译为本地ARM汇编代码，而Xamarin.Android则使用Just-in-Time编译，确保应用的高效运行；（7）简化维护，Xamarin使得应用的维护和更新变得更加简单，开发者只需对源代码进行更改，便可在所有平台上同步更新。通过这些特点，Xamarin为开发者提供了一个高效、灵活的工具，帮助他们构建出色的跨平台移动应用。</p>
 <h3 id="235-unity">2.3.5 Unity</h3>
 <p>Unity是一款由Unity Technologies开发的多功能游戏开发引擎，它支持C#作为主要的开发语言，并且可以通过插件支持其他语言如Boo和UnityScript。Unity的主要特点包括：（1）跨平台开发能力，Unity支持超过25个平台的游戏开发，包括PC、游戏机、移动设备和VR/AR平台，使得开发者能够轻松地将游戏部署到多个平台；（2）强大的渲染能力，Unity提供了先进的渲染技术，包括实时全局光照、物理基础着色器和后处理效果，能够创建出令人惊叹的视觉效果；（3）集成开发环境，Unity的IDE集成了场景编辑器、动画工具、代码编辑器和资产商店，提供了一个完整的工作流程，使得从设计到发布的整个过程更加高效；（4）灵活的脚本支持，Unity支持使用C#进行游戏逻辑编写，为开发者提供了强大的编程能力，并且可以通过插件支持其他脚本语言；（5）Asset Store和社区，Unity拥有一个庞大的Asset Store，提供成千上万的预制资源、工具和插件，同时有一个活跃的社区，开发者可以在这里分享经验、解决问题；（6）2D和3D游戏开发，Unity提供了强大的2D和3D游戏开发工具，包括Tilemap、Sprite Shaders和2D物理，以及3D建模、动画和粒子系统；（7）虚拟现实和增强现实，Unity支持VR和AR开发，与主流的VR设备如Oculus Rift、HTC Vive和AR设备如HoloLens兼容；（8）性能优化工具，Unity提供了一系列的性能分析和优化工具，帮助开发者提升游戏性能，确保游戏在不同硬件上都能流畅运行；（9）云服务，Unity Cloud Build和Cloud Diagnostics等服务，使得构建和测试过程自动化，提高了开发效率；（10）实时多人游戏，Unity提供了多人游戏网络框架，支持实时多人在线游戏的开发。通过这些特点，Unity为游戏开发者提供了一个全面、灵活且强大的平台，使得他们能够创造出高质量的游戏和互动体验，并轻松地将作品推向全球市场。</p>
-<p>总而言之，跨平台开发框架通过使用单一代码库，帮助开发者构建能够运行在多个平台（如 Android 和 iOS）上的移动应用。这类框架以提高开发效率、降低成本为目标，同时保持较高的用户体验和性能表现。有需求的开发者可以考虑使用这类框架，了解不同框架在开发周期、平台支持、性能需求和技术栈偏好等方面的优劣势，以适合不同场景下的开发需求。</p></div>
+<p>总而言之，跨平台开发框架通过使用单一代码库，帮助开发者构建能够运行在多个平台（如 Android 和 iOS）上的移动应用。这类框架以提高开发效率、降低成本为目标，同时保持较高的用户体验和性能表现。有需求的开发者可以考虑使用这类框架，了解不同框架在开发周期、平台支持、性能需求和技术栈偏好等方面的优劣势，以适合不同场景下的开发需求。</p>
+              
             </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01/" class="btn btn-neutral float-left" title="第1章：大模型基本介绍"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../03/" class="btn btn-neutral float-right" title="第3章 移动应用开发基础">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
         </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../03/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
-    </body>
+</body>
 </html>

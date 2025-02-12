@@ -1,148 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>第3章 移动应用开发基础 - My Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">《大模型重塑移动应用开发》前言</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../01/" class="nav-link">第1章：大模型基本介绍</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../02/" class="nav-link">第2章 移动应用开发基础</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">第3章 移动应用开发基础</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../04/" class="nav-link">第4章 大模型应用开发技巧</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../05/" class="nav-link">第5章 开发案例：纸牌配对游戏</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../06/" class="nav-link">第6章 开发案例：井字棋</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../07/" class="nav-link">第7章 未来前景和总结</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../02/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../04/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>第3章 移动应用开发基础 - 大模型重塑移动应用开发</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#3" class="nav-link">第3章 移动应用开发基础</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#31" class="nav-link">3.1 安卓开发环境搭建</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#32-activity" class="nav-link">3.2 Activity</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#33-intent" class="nav-link">3.3 Intent</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#34-layout" class="nav-link">3.4 Layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#35-listener" class="nav-link">3.5 Listener</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#36-fragment" class="nav-link">3.6 Fragment</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#37-tabnavigation" class="nav-link">3.7 Tab和Navigation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#38-recyclerview" class="nav-link">3.8 RecyclerView</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#39" class="nav-link">3.9 网络相关功能</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#310" class="nav-link">3.10 保存和恢复数据</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7b2c3\u7ae0 \u79fb\u52a8\u5e94\u7528\u5f00\u53d1\u57fa\u7840";
+        var mkdocs_page_input_path = "03.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
 
-<h1 id="3">第3章 移动应用开发基础</h1>
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 大模型重塑移动应用开发
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">《大模型重塑移动应用开发》前言</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01/">第1章：大模型基本介绍</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02/">第2章 移动应用开发基础</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">第3章 移动应用开发基础</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31">3.1 安卓开发环境搭建</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#311-android-studio">3.1.1 Android Studio的下载安装</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#312">3.1.2 快速上手</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-activity">3.2 Activity</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#321-activity">3.2.1 Activity的生命周期</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#322-activity">3.2.2 Activity的跳转</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_1">基本跳转</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_2">带参数跳转</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_3">跳转关系的可视化</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_4">跳转的高级用法</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#323-activity">3.2.3 大模型生成Activity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">目标</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">实现过程</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-intent">3.3 Intent</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-intent">3.3.1 Intent的使用场景</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#332-intent">3.3.2 大模型生成Intent代码的示例</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#34-layout">3.4 Layout</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#341">3.4.1 布局方式简介</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#342-constrain-layout">3.4.2 Constrain Layout（约束布局）</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#343">3.4.3 编辑器设计布局示例</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#344">3.4.4 大模型设计布局示例</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#35-listener">3.5 Listener</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#351">3.5.1 监听器的概念</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#352">3.5.2 监听器的作用</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#353">3.5.3 监听器的工作原理</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#354">3.5.4 常见的监听器类型</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#355">3.5.5. 监听器的注册方式</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1">（1）匿名内部类</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2">（2）内部类</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3_1">（3）外部类</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#4activityfragment">（4）Activity或Fragment自身实现接口</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#5xml">（5）通过XML设置</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#356">3.5.6 监听器的回调方法</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#358-listener">3.5.8  大模型使用Listener案例</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#359">3.5.9 总结</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#36-fragment">3.6 Fragment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#361-fragment">3.6.1 Fragment介绍</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#361-fragment_1">3.6.1 Fragment的特性</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1_1">（1）模块化与复用性</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2_1">（2）动态性与灵活性</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3_2">（3）多屏适配</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#4activity">（4）与Activity的协作</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#5">（5）状态保存与恢复</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#6fragment">（6）嵌套Fragment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#363-fragment">3.6.3 Fragment的使用</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#37-tabnavigation">3.7 Tab和Navigation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#371-tab">3.7.1 Tab的介绍与使用</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#372-navigation">3.7.2 Navigation的介绍和使用</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#373-tab">3.7.3 大模型实现Tab的示例</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#374">3.7.4 大模型实现底部导航栏的示例</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#38-recyclerview">3.8 RecyclerView</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#381-recyclerview">3.8.1 RecyclerView的组件</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#382-recycleview">3.8.2 RecycleView的使用方式</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#383-recyclerview">3.8.3 大模型在RecyclerView中的应用</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#39">3.9 网络相关功能</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#391-socket">3.9.1 Socket编程</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#392-httphttps">3.9.2 HTTP/HTTPS基础</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#393-https">3.9.3 大模型在获取HTTPS内容中的应用</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#310">3.10 保存和恢复数据</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04/">第4章 大模型应用开发技巧</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../05/">第5章 开发案例：纸牌配对游戏</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../06/">第6章 开发案例：井字棋</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../07/">第7章 未来前景和总结</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">大模型重塑移动应用开发</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>第3章 移动应用开发基础</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3">第3章 移动应用开发基础</h1>
 <p>本章旨在为初学者提供一个系统、全面的学习路径，从基础到进阶，逐步深入Android应用开发的核心技术。读者将从零开始，逐步掌握Android应用开发的核心技术和最佳实践。
 <strong>每一节都是一个独立的学习单元，但它们之间又紧密相连，共同构成了一个完整的Android应用开发知识体系。</strong>
 希望本教程能够帮助读者在移动应用开发上打下基础。</p>
@@ -3508,81 +3605,51 @@ protected void onResume() {
 <p><strong>操作：</strong>
 大模型为我们提供了三种保存和恢复数据的方法，还告诉了我们相应的注意事项，我们可以根据需求进行使用。对于这个简单的APP，我们在创建应用时就确定了数据，而对于复杂的、动态添加数据的APP，我们就必须注意数据的保存与恢复，防止APP进入后台或屏幕旋转等时候数据丢失。当然，对于更加复杂的数据保存，如使用sqlite数据库Room组件等，我们还可以继续在大模型的帮助下看看怎么能够完成，那部分就留给读者自己去探索了。</p>
 <p><img alt="3-5" src="../fig03/3-5.png" /></p>
-<!-- 图3-5 Activity跳转示例 --></div>
+<!-- 图3-5 Activity跳转示例 -->
+              
             </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../02/" class="btn btn-neutral float-left" title="第2章 移动应用开发基础"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../04/" class="btn btn-neutral float-right" title="第4章 大模型应用开发技巧">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
         </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../02/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../04/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
-    </body>
+</body>
 </html>
