@@ -1,157 +1,86 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>大模型重塑移动应用开发</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "\u300a\u5927\u6a21\u578b\u91cd\u5851\u79fb\u52a8\u5e94\u7528\u5f00\u53d1\u300b\u524d\u8a00";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物联网在线学习材料</title>
+    <style>
+        /* 基础样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative; /* 为Logo定位提供参考 */
+        }
+
+        /* 清华校徽Logo */
+        .logo {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            width: 200px; /* 调整Logo大小 */
+            height: auto;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 图片容器 */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px; /* 图片之间的间距 */
+            max-width: 800px; /* 限制容器的最大宽度 */
+            width: 100%;
+        }
+
+        .image-container a {
+            flex: 1 1 calc(40% - 40px); /* 每张图片占据50%宽度，减去间距 */
+            max-width: calc(40% - 40px); /* 限制图片最大宽度 */
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 手机端样式 */
+        @media (max-width: 768px) {
+            .image-container a {
+                flex: 1 1 100%; /* 手机端每张图片占据100%宽度 */
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> 大模型重塑移动应用开发
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href=".">《大模型重塑移动应用开发》前言</a>
-    <ul class="current">
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="01/">第1章：大模型基本介绍</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="02/">第2章 移动应用开发基础</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="03/">第3章 移动应用开发基础</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="04/">第4章 大模型应用开发技巧</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="05/">第5章 开发案例：纸牌配对游戏</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="06/">第6章 开发案例：井字棋</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="07/">第7章 未来前景和总结</a>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">大模型重塑移动应用开发</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>《大模型重塑移动应用开发》前言</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="_1">《大模型重塑移动应用开发》前言</h1>
-<p>近期电影《哪吒》和《封神》在电影院热映，大家对封神故事有浓厚兴趣。在封神大战之后，姜子牙肩负封神重任。常规来说，封神应论功行赏，依据战功大小分配神位。可姜子牙目光长远，没有局限于这单一标准，而是综合考量诸多因素。他不仅看重战场上的功绩，还深入考察诸位仙神的品德、能力以及对天地秩序的理解。这种打破常规的封神方式，展现出独特的智慧和创新思维。</p>
-<p>软件开发领域的思考，还有另外一部带着”神“字的经典著作《人月神话》，这本书我记得有一段时间学院还发给了我们来阅读。这本书中提到，大型软件项目开发往往充满挑战，就如同把神话中的月亮摘下来般困难。在软件开发过程中，沟通成本、任务分解的复杂性等，都会导致项目进度受阻。</p>
-<p>移动平台，是现在最广泛使用的平台（没有之一）。移动应用开发，是使用移动平台的基础。我在准备《移动应用开发》课程中发现移动应用开发领域发展迅速，工具、语言、方法层出不穷，内容繁杂到一门课程根本无法全部覆盖。于是，我们的课程选取了最基础的移动应用开发方法，目的是让同学们能够顺利入门。然而，在授课过程中，大模型如雨后春笋般出现并迅速发展。这让我不禁思索：大模型的崛起会给移动应用开发带来怎样的变革？传统的开发方式是否还有坚持的必要和意义？就如同封神时对传统封神工具和开发方式是否需要重新审视排序与变革一样。人月神话是否有新的理解方式。甚至还会思考，有了大模型，是否还需要学习移动应用开发？如果需要，又该学习哪些内容？怎样才能进一步提升课程的价值和意义？这些问题萦绕在我心头，一时难以找到答案。于是，我决定亲自尝试，并且和同学们一起探索前行。这份资料，便是我们在尝试过程中的点点滴滴记录，希望能在不断摸索中找到更优的方向 。</p>
-<p>移动应用开发有着一套既定的流程和模式。从需求调研阶段开始，开发者就得与客户进行反复的沟通交流。紧接着的设计环节，开发者需要凭借自身经验和创意，手工绘制原型图等。而到了代码编写阶段，一行行代码的编写不仅需要开发者具备扎实的技术功底。最后进入测试阶段，开发者又要投入大量时间，逐一排查并修复可能出现的各种问题。整个开发流程不仅高度依赖人工，成本也相当高昂。</p>
-<p>随着大模型的迅猛发展，移动应用开发领域迎来了前所未有的变革。在需求分析阶段，大模型能够借助大数据分析技术，对海量的用户数据进行深度挖掘和分析。通过分析用户在各类平台上的行为数据，如搜索记录、浏览习惯、消费偏好等，快速且精准地洞察用户的潜在需求和痛点，为应用开发提供极具针对性的方向指引。在设计环节，人工智能更是展现出强大的创造力。它能够依据应用的定位、目标用户群体的特征，自动生成多样化的设计方案。开发者只需在这些方案的基础上，根据实际需求进行适当的调整和优化，就能极大地缩短设计周期，提升设计质量。</p>
-<p>而在最为关键的代码编写阶段，大模型的优势尤为突出。它能够理解自然语言描述的功能需求，将开发者用日常语言表达的功能诉求转化为可运行的代码。这意味着开发者无需再花费大量时间和精力编写基础代码，只需用简洁明了的自然语言描述应用功能。</p>
-<p>大模型重塑移动应用开发模式，我们深刻体会到要避免陷入两个误区：我就是无所不能，什么事情都自己来；大模型无所不能，什么事情都可以交给大模型。</p>
-<p>在天下无贼的火车上，黎叔说出了那句经典的话“21世纪什么最贵？人才！”</p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="01/" class="btn btn-neutral float-right" title="第1章：大模型基本介绍">Next <span class="icon icon-circle-arrow-right"></span></a>
+<body>
+    <!-- 清华校徽Logo -->
+    <div class="logo">
+        <img src="./tsinghua.png" alt="清华大学校徽">
     </div>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="01/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
-</div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme_extra.js" defer></script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
+    <!-- 图片容器 -->
+    <div class="image-container">
+        <a href="./llm4app/index.html" target="_blank">
+            <img src="./llm4app.png" alt="图片1">
+        </a>
+        <a href="https://iot-book.github.io/0_%E5%89%8D%E8%A8%802/" target="_blank">
+            <img src="./iotbook.png" alt="图片2">
+        </a>
+    </div>
 </body>
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2025-02-12 08:06:52.359613+00:00
--->

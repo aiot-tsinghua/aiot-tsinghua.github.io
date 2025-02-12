@@ -1,0 +1,631 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/07/">
+      
+      
+        <link rel="prev" href="../06/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>第7章 未来前景和总结 - 大模型重塑移动应用开发</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="大模型重塑移动应用开发" class="md-header__button md-logo" aria-label="大模型重塑移动应用开发" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            大模型重塑移动应用开发
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第7章 未来前景和总结
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="大模型重塑移动应用开发" class="md-nav__button md-logo" aria-label="大模型重塑移动应用开发" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    大模型重塑移动应用开发
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01/" class="md-nav__link">
+        第1章：大模型基本介绍
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02/" class="md-nav__link">
+        第2章 移动应用开发基础
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        第3章 移动应用开发基础
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04/" class="md-nav__link">
+        第4章 大模型应用开发技巧
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05/" class="md-nav__link">
+        第5章 开发案例：纸牌配对游戏
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06/" class="md-nav__link">
+        第6章 开发案例：井字棋
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          第7章 未来前景和总结
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        第7章 未来前景和总结
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    7.1 大模型在移动应用开发中的作用
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 大模型在移动应用开发中的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711" class="md-nav__link">
+    7.1.1代码自动生成与优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712" class="md-nav__link">
+    7.1.2自动化代码审查与建议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-api" class="md-nav__link">
+    7.1.3 API集成与接口文档自动生成：需求分析与项目管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#714" class="md-nav__link">
+    7.1.4 错误调试与异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715" class="md-nav__link">
+    7.1.5 自动化测试生成与优化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    7.2 大模型在开发流程中的高端应用
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 大模型在开发流程中的高端应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721" class="md-nav__link">
+    7.2.1 代码翻译与迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722" class="md-nav__link">
+    7.2.2 跨语言协同开发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723" class="md-nav__link">
+    7.2.3 协作与知识分享
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    7.3 大模型不等于完美代码
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    7.1 大模型在移动应用开发中的作用
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 大模型在移动应用开发中的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711" class="md-nav__link">
+    7.1.1代码自动生成与优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712" class="md-nav__link">
+    7.1.2自动化代码审查与建议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-api" class="md-nav__link">
+    7.1.3 API集成与接口文档自动生成：需求分析与项目管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#714" class="md-nav__link">
+    7.1.4 错误调试与异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715" class="md-nav__link">
+    7.1.5 自动化测试生成与优化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    7.2 大模型在开发流程中的高端应用
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 大模型在开发流程中的高端应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721" class="md-nav__link">
+    7.2.1 代码翻译与迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722" class="md-nav__link">
+    7.2.2 跨语言协同开发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723" class="md-nav__link">
+    7.2.3 协作与知识分享
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    7.3 大模型不等于完美代码
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7">第7章 未来前景和总结</h1>
+<p>随着移动设备和互联网技术的不断发展，大模型技术在移动应用开发中的应用前景不可限量，特别是在自动化开发过程、优化性能等方面。</p>
+<h2 id="71">7.1 大模型在移动应用开发中的作用</h2>
+<h3 id="711">7.1.1代码自动生成与优化</h3>
+<p>大模型（例如代码生成模型）能够自动生成常见的代码结构，简化开发过程中的重复性工作。自动化代码生成是AI大模型在软件开发中最为显著的优势之一。传统的软件开发过程往往涉及大量的手动编码工作，尤其是重复性较高的任务。AI大模型能够自动生成这些代码，开发者只需要简单描述功能需求，系统就能提供符合需求的代码框架。AI大模型通还能够过分析现有的代码库，自动生成新的代码，从而提高开发效率。</p>
+<h3 id="712">7.1.2自动化代码审查与建议</h3>
+<p>AI大模型在自动化代码审查与建议方面发挥着重要作用，它通过深度学习和自然语言处理技术，能够自动分析代码的结构、性能、可读性等方面，发现潜在的问题，并提供优化建议。AI大模型能够对开发人员的代码进行实时分析，提供优化建议、bug修复提示或安全漏洞警告。例如，AI可以识别代码中的冗余部分、重复逻辑、命名不规范等问题，并建议更优的代码实现方式。开发人员在编写代码时，AI大模型可以帮助识别潜在的性能瓶颈、冗余代码或不规范的命名等。</p>
+<h3 id="713-api">7.1.3 API集成与接口文档自动生成：需求分析与项目管理</h3>
+<p>在开发移动应用时，与后端API的集成是一个关键步骤，而大模型在这一过程中扮演着至关重要的角色。大模型通过自然语言处理技术，能够理解和分析API文档，自动生成API调用代码，极大地提高了开发效率。这意味着开发者只需提供API的接口文档，大模型就能根据这些文档自动生成相应的代码，减少了手动编写API调用代码的工作量和出错的可能性。当然，有一些文档是开发前就需要准备好的，这就需要开发者事先想清楚，然后在通过大模型进行辅助，而不是一味的依赖大模型。</p>
+<h3 id="714">7.1.4 错误调试与异常处理</h3>
+<p>在开发移动应用时，大模型在错误调试与异常处理方面发挥着至关重要的作用。它们能够自动识别代码中的错误，并提供调试建议，极大地提升了开发效率和软件质量。例如，AI大模型可以分析程序的错误日志，通过模式识别和机器学习技术，快速定位问题所在，并推荐可能的解决方案或修复方法。这种能力不仅减少了开发人员在故障排除上的时间，还提高了问题解决的准确性。</p>
+<h3 id="715">7.1.5 自动化测试生成与优化</h3>
+<p>在开发移动应用的过程中，大模型在自动化测试生成与优化方面扮演着越来越重要的角色。大模型能够为开发人员自动生成单元测试、集成测试和UI自动化测试代码，显著提升了测试的效率和覆盖率。通过深度学习和自然语言处理技术，大模型可以理解软件的功能需求和设计文档，自动产生测试用例和测试脚本，减少了测试工程师手动编写测试代码的工作量和出错的可能性。
+本章节中，还没有涉及到自动化测试与优化，感兴趣的读者可以进一步去尝试。</p>
+<h2 id="72">7.2 大模型在开发流程中的高端应用</h2>
+<h3 id="721">7.2.1 代码翻译与迁移</h3>
+<p>在开发移动应用时，面对从一种技术栈迁移到另一种技术栈的需求，例如从Android原生开发迁移到Flutter或React Native，大模型可以发挥重要作用，辅助程序员高效地将现有代码迁移到新的平台。大模型通过其强大的语言理解和代码生成能力，能够自动化地进行代码翻译与迁移工作，从而提高迁移效率和准确性。</p>
+<h3 id="722">7.2.2 跨语言协同开发</h3>
+<p>在开发移动应用时，尤其是在多语言项目中，开发人员经常需要将不同编程语言的代码结合起来。大模型在这个过程中扮演着至关重要的角色，能够帮助生成不同语言之间的桥接代码，自动进行转换和集成。</p>
+<h3 id="723">7.2.3 协作与知识分享</h3>
+<p>在移动应用开发中，大模型在协作与知识分享方面的作用尤为显著，它能够极大地促进团队成员之间的信息流通和知识传递。通过分析团队的开发文档和交流记录，大模型能够帮助新成员快速理解项目背景、技术栈、代码规范和设计决策，从而加速他们的上手过程。这种能力使得新加入的开发者可以迅速融入团队，减少因知识传递不畅而导致的项目延误。</p>
+<h2 id="73">7.3 大模型不等于完美代码</h2>
+<p>大模型辅助的代码生成虽然极大地提高了开发效率，但它并不等于完美代码，在实际使用中，我们也发现了大模型生成的代码可能存在各种不同的小问题，还是不断需要开发者介入来解决这些问题。</p>
+<p>首先，大模型生成的代码可能存在逻辑错误、性能问题或不符合最佳编程实践的情况，会出现代码质量与安全性问题。例如，在生成循环结构时，可能会选择效率较低的算法，或者在变量命名上不够清晰、准确，导致代码的可读性较差。此外，AI生成的代码还可能存在安全隐患，如无意中学习到一些不安全的编程模式或存在漏洞的代码片段，并在生成代码时将这些问题引入。</p>
+<p>面对大模型辅助开发工具的局限性，开发者应确保代码质量和项目的顺利进行。代码审查是保证代码质量的关键环节。开发者在使用大模型生成代码后，务必进行人工审查，仔细检查代码的逻辑结构、变量命名、函数调用等方面是否符合编程规范和项目需求。为了充分发挥AI的优势并弥补其不足。在这种模式下，开发者可以将AI作为辅助工具，用于生成一些基础的代码框架、常见的算法实现或重复性的代码片段，而对于核心业务逻辑、复杂算法和关键系统部分，则依靠自己的专业知识和经验进行手动编写。</p>
+<p>其次， 大模型生成的代码可能在效率和优化方面不够理想，难以自动考虑复杂的性能需求和系统约束条件。因此，开发者需要对生成的代码进行性能优化，确保代码在实际运行中能够满足性能要求。大模型对高度专业化或新兴技术领域的理解可能不够深入，难以准确把握和应用特定行业的最佳实践和规范。因此，对于特定领域的项目，开发者需要结合自己的专业知识，对大模型生成的代码进行调整和优化。</p>
+<p>最后，使用大模型生成的代码可能引发知识产权纠纷，在某些情况下，使用AI生成代码可能违反特定许可协议或法规。因此，在使用大模型辅助代码生成时，开发者需要考虑版权和法律问题，确保代码的合法性。</p>
+<p>虽然大模型辅助代码生成工具提供了便利，但程序员需要对生成的代码进行检查和优化，尤其是在涉及复杂算法和关键系统部分时。通过人工验证和混合开发模式，可以确保代码的质量和项目的顺利进行。我想，大家在尝试本书中给出的大量案例的时候，可能就会发现类似的情况，很多时候大模型给出的结果未必会跟本书中一摸一样，很多时候大模型生成的代码也未必能完全信任。毕竟从现在的结果来看，大模型数清楚strawberry中的r的数量仍然还存在问题：）。</p>
+<p>为了应对这些挑战，开发者应该始终保持对编程语言和框架的基本掌握，避免完全依赖自动生成的代码。比如可以进行代码的审查与验证，在使用大模型生成的代码后，始终手动验证其功能正确性和性能优化，特别是在涉及复杂算法时。这不仅确保了代码的质量，也是对自身技能的一种锻炼和提升。同时，即使在使用AI辅助编程的同时，也要持续提升自己的编程技能，保持对技术的深入理解。这包括对新语言、新框架的学习，以及对现有代码库的深入分析。有效地结合人类直觉和AI效率，实现人机协作也是避免过度依赖的一种方式。这意味着在AI提供代码建议时，开发者应积极参与决策过程，而不是盲目接受AI的输出。通过这些方法，开发者可以充分利用大模型的优势，同时保持自己的专业技能和创新能力，避免过度依赖带来的潜在风险。</p>
+<p>大模型为程序员提供了强大的工具支持，能够显著提高开发效率、自动化开发流程，并降低错误率。不过，如何有效地将大模型与传统开发流程结合、优化模型的使用效果，仍然是未来发展的关键挑战。</p>
+<p>最后，我想回答一下前面提出的问题，有了大模型了，是不是代码开发工作就不需要人类了，是不是码农就失业了。</p>
+<p>借用天下无贼中黎叔说的话：“21世纪什么最贵？人才！”</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+    
+  </body>
+</html>
