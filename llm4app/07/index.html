@@ -150,6 +150,13 @@
     
   </nav>
   
+
+  <!-- ... -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
+  <!-- ... -->
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -701,6 +708,16 @@
 
 
 
+<!-- ... -->
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://comments-ck19i4yun-aiot-tsinghuas-projects.vercel.app/',
+  });
+</script>
                 
               </article>
             </div>
@@ -745,5 +762,23 @@
       <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
+
+    <!-- Default Statcounter code for AIOT
+    https://aiot-tsinghua.github.io/ -->
+    <script type="text/javascript">
+      var sc_project=13086918; 
+      var sc_invisible=1; 
+      var sc_security="5644dd6d"; 
+      </script>
+      <script type="text/javascript"
+      src="https://www.statcounter.com/counter/counter.js"
+      async></script>
+      <noscript><div class="statcounter"><a title="Web Analytics
+      Made Easy - Statcounter" href=" "
+      target="_blank">< img class="statcounter"
+      src="https://c.statcounter.com/13086918/0/5644dd6d/1/"
+      alt="Web Analytics Made Easy - Statcounter"
+      referrerPolicy="no-referrer-when-downgrade"></a ></div></noscript>
+      <!-- End of Statcounter Code -->
   </body>
 </html>
