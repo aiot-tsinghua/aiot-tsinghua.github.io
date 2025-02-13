@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f0f0;
             position: relative; /* 为Logo定位提供参考 */
         }
@@ -20,9 +20,9 @@
         /* 清华校徽Logo */
         .logo {
             position: absolute;
-            top: 5px;
-            right: 10px;
-            width: 200px; /* 调整Logo大小 */
+            top: 20px;
+            right: 20px;
+            width: 100px; /* Logo大小 */
             height: auto;
         }
 
@@ -36,14 +36,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 100px; /* 图片之间的间距 */
+            gap: 50px; /* 图片之间的间距 */
             max-width: 800px; /* 限制容器的最大宽度 */
             width: 100%;
+            padding: 20px; /* 添加内边距，避免内容贴边 */
+            box-sizing: border-box; /* 确保内边距不影响总宽度 */
         }
 
         .image-container a {
-            flex: 1 1 calc(40% - 40px); /* 每张图片占据50%宽度，减去间距 */
-            max-width: calc(40% - 40px); /* 限制图片最大宽度 */
+            flex: 1 1 calc(40% - 20px); /* 每张图片占据50%宽度，减去间距 */
+            max-width: calc(40% - 20px); /* 限制图片最大宽度 */
             text-align: center;
         }
 
@@ -52,6 +54,7 @@
             height: auto;
             border-radius: 10px;
             transition: transform 0.3s ease;
+            object-fit: contain; /* 确保图片完整显示且不变形 */
         }
 
         .image-container img:hover {
@@ -60,9 +63,18 @@
 
         /* 手机端样式 */
         @media (max-width: 768px) {
+            .image-container {
+                gap: 10px; /* 手机端减少间距 */
+                padding: 10px; /* 手机端减少内边距 */
+            }
+
             .image-container a {
                 flex: 1 1 100%; /* 手机端每张图片占据100%宽度 */
                 max-width: 100%;
+            }
+
+            .image-container img {
+                max-height: 300px; /* 限制图片最大高度，避免过长 */
             }
         }
     </style>
